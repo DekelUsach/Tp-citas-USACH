@@ -28,29 +28,28 @@ function App() {
 
   return (
     <>
-    <NavBar/>
+      <NavBar />
+        <div className="container">
+          <div className="row">
+            <Routes>
+            
 
-      <div className="container">
-        <div className="row">
-          <Routes>
-          <Route
-              path="/"
-              element={<Home></Home>}
-            />
-            <Route
-              path="formulario"
-              element={<Formulario onNuevaCita={crearCita} />}
-            />
+              <Route path="/" element={<Home></Home>} />
+              <Route
+                path="formulario"
+                element={<Formulario onNuevaCita={crearCita} />}
+              />
 
-            <Route
-              path="citas"
-              element={
-                <CitasContainer citas={citas} onEliminarCita={eliminarCita} />
-              }
-            />
-          </Routes>
+              <Route
+                path="citas"
+                element={
+                  <CitasContainer citas={citas} onEliminarCita={eliminarCita} />
+                }
+              />
+              
+            </Routes>
+          </div>
         </div>
-      </div>
     </>
   );
 }

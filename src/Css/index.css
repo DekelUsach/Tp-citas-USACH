@@ -10,7 +10,11 @@ body {
   min-height: 100%;
   padding-bottom: 5rem;
 }
-
+.justify{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 h1,
 h2 {
   color: white;
