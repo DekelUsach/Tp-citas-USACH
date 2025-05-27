@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CitasContainer from "./Pages/CitasContainer";
 import Formulario from "./Pages/Formulario";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route, NavLink, Navigate } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Pages/Home";
 
@@ -46,7 +46,8 @@ function App() {
                   <CitasContainer citas={citas} onEliminarCita={eliminarCita} />
                 }
               />
-              
+                      <Route path="*" element={<Navigate to="/" replace/>}/>
+
             </Routes>
           </div>
         </div>

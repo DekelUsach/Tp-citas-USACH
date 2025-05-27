@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://dekelusach.github.io/TP4-Citas-partes-unidas/",
+  "homepage": "https://dekelusach.github.io/Tp-citas-USACH/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
