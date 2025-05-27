@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Input from "./Input";
+import Input from "../Input";
 
 const cosasVacias = {
   mascota: "",
@@ -45,6 +45,9 @@ export default function Formulario({ onNuevaCita }) {
   };
 
   return (
+    <>
+                <h1 className="titulo">ADMINISTRADOR DE PACIENTES</h1>
+
     <div className="one-half column">
       <h2>Crear mi Cita</h2>
       {error && (
@@ -103,5 +106,6 @@ export default function Formulario({ onNuevaCita }) {
       </form>
   
     </div>
+    </>
   );
 }
